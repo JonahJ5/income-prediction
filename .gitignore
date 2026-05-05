@@ -1,0 +1,29 @@
+# Raw IPUMS/ACS extracts can be very large and should not be committed.
+data/raw/*
+!data/raw/.gitkeep
+
+# Large generated datasets can be recreated by the pipeline.
+data/processed/*.csv
+data/tableau_exports/*.csv
+models/*.joblib
+outputs/metrics/*.csv
+outputs/visuals/*.png
+!data/processed/.gitkeep
+!data/tableau_exports/.gitkeep
+!models/.gitkeep
+!outputs/metrics/.gitkeep
+!outputs/visuals/.gitkeep
+
+# Python and notebook cache files.
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local environments and OS/editor noise.
+.venv/
+venv/
+env/
+.codex_deps/
+.DS_Store
+Thumbs.db
+.vscode/
