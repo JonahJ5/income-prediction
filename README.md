@@ -156,6 +156,10 @@ data/tableau_exports/income_distribution_by_state.csv
 data/tableau_exports/profile_summary.csv
 ```
 
+## Public Portfolio Notes
+
+Raw IPUMS USA / ACS microdata and generated person-level datasets are not included in this repository. Tableau dashboards show aggregate visual summaries derived from the project pipeline.
+
 ## Ethics and Limitations
 
 This is an exploratory and educational project. ACS income patterns are shaped by complex historical, geographic, labor-market, policy, and measurement factors. Model predictions should be interpreted as pattern recognition within survey data, not as explanations of individual worth or causal effects.
