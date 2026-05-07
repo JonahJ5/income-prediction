@@ -131,7 +131,7 @@ Features include:
 - `degree_field_group`
 - `second_degree_field_group`
 
-The reduced ethics model excludes `race_group` and `sex_label`. Because Hispanic origin is not present in this extract, the project does not build a combined race/ethnicity field.
+Model 1 uses all available features. Model 2 excludes `race_group` and `sex_label` to compare performance without those sensitive demographic fields. Because Hispanic origin is not present in this extract, the project does not build a combined race/ethnicity field.
 
 Evaluation includes accuracy, macro F1, weighted F1, classification reports, a confusion matrix, model comparison, and feature importance where practical.
 
@@ -160,7 +160,7 @@ data/tableau_exports/profile_summary.csv
 
 This is an exploratory and educational project. ACS income patterns are shaped by complex historical, geographic, labor-market, policy, and measurement factors. Model predictions should be interpreted as pattern recognition within survey data, not as explanations of individual worth or causal effects.
 
-Sensitive demographic variables can improve measured prediction performance while raising fairness and misuse concerns. For that reason, the project includes a reduced model that excludes race and sex, and the README explicitly discourages individual decision-making uses.
+Sensitive demographic variables can improve measured prediction performance while raising fairness and misuse concerns. For that reason, the project compares a model using all available features with a second model that excludes race and sex. This comparison does not guarantee fairness; it simply shows how performance changes when those fields are removed.
 
 Other limitations:
 

@@ -174,7 +174,7 @@ def build_models(categorical_features: list[str]) -> dict[str, Pipeline]:
 
 
 def train_income_models() -> pd.DataFrame:
-    """Train full and reduced models, save metrics, best model, and scored rows."""
+    """Train model versions, save metrics, best model, and scored rows."""
     ensure_directories()
     data = load_modeling_sample()
     full_features = NUMERIC_FEATURES + FULL_CATEGORICAL_FEATURES
@@ -200,8 +200,8 @@ def train_income_models() -> pd.DataFrame:
     reports = []
     trained_models = {}
     experiment_specs = {
-        "full": FULL_CATEGORICAL_FEATURES,
-        "reduced_ethics": REDUCED_CATEGORICAL_FEATURES,
+        "Model 1: All Features": FULL_CATEGORICAL_FEATURES,
+        "Model 2: Excludes Race and Sex": REDUCED_CATEGORICAL_FEATURES,
     }
 
     for experiment_name, categorical_features in experiment_specs.items():

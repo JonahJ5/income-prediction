@@ -82,5 +82,5 @@ Income bracket values:
 | `income_distribution_by_state.csv` | State by income bracket | Weighted population and share for each bracket in each state |
 | `model_scored_people.csv` | Scored test person row | Actual bracket, predicted bracket, correctness flag, probabilities, and available dashboard dimensions |
 | `feature_importance.csv` | Model feature | Feature importance or coefficient strength for the selected best model |
-| `model_comparison.csv` | Model experiment | Accuracy, macro F1, weighted F1, and row counts for full and reduced models |
+| `model_comparison.csv` | Model experiment | Accuracy, macro F1, weighted F1, and row counts for Model 1 and Model 2 |
 | `profile_summary.csv` | Profile category by bracket | Weighted profile summaries for education, age, race, and degree field |
