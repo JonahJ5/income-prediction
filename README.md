@@ -4,7 +4,11 @@ This project uses an IPUMS USA / ACS microdata extract to clean person-level rec
 
 This project explores associations between demographic, education, employment, and geographic characteristics and wage income. It is not a causal model and should not be used for individual decision-making such as hiring, lending, or eligibility decisions.
 
-## Business and Analytics Question
+## Dashboard
+
+Interactive Tableau Public workbook: [IPUMS Income Predictions](https://public.tableau.com/app/profile/jonah.jutzi/viz/IPUMS_Income_Predictions/StateIncomeOverview)
+
+## Analytics Question
 
 How do age, education, employment status, family size, degree field, race, sex, citizenship, marital status, and geography relate to wage income brackets across U.S. states, and how well can common machine-learning classifiers predict a person's wage income bracket from the fields available in this ACS extract?
 
@@ -135,15 +139,14 @@ Model 1 uses all available features. Model 2 excludes `race_group` and `sex_labe
 
 Evaluation includes accuracy, macro F1, weighted F1, classification reports, a confusion matrix, model comparison, and feature importance where practical.
 
-## Tableau Dashboard Plan
+## Tableau Dashboards
 
-Tableau dashboard pages:
+The Tableau Public workbook includes four dashboard pages:
 
-- State Income Overview: map and ranking of weighted average wage income, median wage income, and population represented.
-- Income Bracket Mix: stacked bar or heatmap showing bracket shares by state.
-- Demographic Explorer: filters for age group, education, race, sex, citizenship, and degree field.
-- Model Performance: confusion matrix, accuracy/F1 table, prediction correctness rate, and probability distribution.
-- Model Signals: feature importance table or bar chart.
+- State Income Overview: weighted wage KPIs, a state map, top states by average wage, and an education-income scatter plot.
+- Income Bracket Profiles: 100% stacked income bracket profiles by state, age, race, education, and degree field.
+- Predictive Model Performance: model comparison metrics, feature importance, and a confusion matrix for the selected model.
+- Predictions: prediction accuracy by group, predicted probability of `$100,000+`, and correct/incorrect prediction patterns by income bracket.
 
 Tableau export files:
 
@@ -158,7 +161,7 @@ data/tableau_exports/profile_summary.csv
 
 ## Public Portfolio Notes
 
-Raw IPUMS USA / ACS microdata and generated person-level datasets are not included in this repository. Tableau dashboards show aggregate visual summaries derived from the project pipeline.
+Raw IPUMS USA / ACS microdata and generated person-level datasets are not included in this repository. Tableau dashboards show visual summaries derived from the project pipeline and do not include a row-level detail table.
 
 ## Ethics and Limitations
 
