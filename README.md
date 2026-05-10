@@ -8,6 +8,10 @@ This project explores associations between demographic, education, employment, a
 
 Interactive Tableau Public workbook: [IPUMS Income Predictions](https://public.tableau.com/app/profile/jonah.jutzi/viz/IPUMS_Income_Predictions/StateIncomeOverview)
 
+## Preview
+
+![State income dashboard preview](assets/dashboard-preview.png)
+
 ## Analytics Question
 
 How do age, education, employment status, family size, degree field, race, sex, citizenship, marital status, and geography relate to wage income brackets across U.S. states, and how well can common machine-learning classifiers predict a person's wage income bracket from the fields available in this ACS extract?
